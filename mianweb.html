@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .section-padding {
+            padding: 100px 0;
+        }
+        .bg-light-gray {
+            background-color: #f8f9fa;
+        }
+        .project-card {
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .skill-progress {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0d6efd;
+        }
+        .btn-custom {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        .navbar {
+            transition: background-color 0.3s;
+        }
+        .navbar.scrolled {
+            background-color: #212529 !important;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MY PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Hello, I'm <span class="text-primary">Chinnawat Sreesangjun</span></h1>
+            <h2 class="mb-5">Hardware & IT Support and Web Developer & Designer</h2>
+            <p class="lead mb-5">Solving problems, supporting systems, and crafting technical solutions with a human touch.</p>
+            <div>
+                <a href="#contact" class="btn btn-primary btn-lg btn-custom me-3">Hire Me</a>
+                <a href="#projects" class="btn btn-outline-light btn-lg btn-custom">View Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/600" alt="About Me" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h6 class="text-primary">ABOUT ME</h6>
+                        <h2 class="mb-4">Hardware enthusiasts and creative</h2>
+                        <p class="lead mb-4">Hello! I'm Chinnawat Sreesangjun, a third-year Computer Science student at Hua Chiew Chalermprakiet University with a strong passion for hardware, IT support, and web development. I enjoy combining hands-on technical work with digital creativity.</p>
+                        <p class="mb-4">My interests include assembling and maintaining hardware systems, supporting users with technical issues, and building responsive websites using HTML, CSS, and JavaScript.</p>
+                        <I class="mb-4">I love learning new things, working with others, and turning ideas into real solutions that make life easier and smarter</p>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-laptop-code me-3 text-primary fs-3"></i>
+                                    <div>
+                                        <h5 class="mb-0">Web Development</h5>
+                                        <p class="mb-0">Creating responsive websites</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-mobile-alt me-3 text-primary fs-3"></i>
+                                    <div>
+                                        <h5 class="mb-0">IT & Computer Hardware</h5>
+                                        <p class="mb-0">PC assembly, support, and troubleshooting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-custom">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h6 class="text-primary">MY SKILLS</h6>
+                    <h2>Technical Expertise</h2>
+                    <p class="lead">A collection of technologies I've mastered over the years.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skill-progress">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML/CSS/JS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>PHP/MySQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>UI/UX Design</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-progress">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Computer Hardware</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Basic Networking</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>IoT & Microcontroller</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h6 class="text-primary">MY WORK</h6>
+                    <h2>Featured Projects</h2>
+                    <p class="lead">Here are some of my recent projects that showcase my skills and expertise.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="/api/placeholder/600/400" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Website</h5>
+                            <p class="card-text">A responsive e-commerce platform built with React and Node.js.</p>
+                            <div class="d-flex">
+                                <span class="badge bg-secondary me-2">React</span>
+                                <span class="badge bg-secondary me-2">Node.js</span>
+                                <span class="badge bg-secondary">MongoDB</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-sm btn-outline-primary me-2">View Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="/api/placeholder/600/400" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media App</h5>
+                            <p class="card-text">A full-stack social networking application with real-time features.</p>
+                            <div class="d-flex">
+                                <span class="badge bg-secondary me-2">Angular</span>
+                                <span class="badge bg-secondary me-2">Express</span>
+                                <span class="badge bg-secondary">Socket.IO</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-sm btn-outline-primary me-2">View Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card shadow">
+                        <img src="/api/placeholder/600/400" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A responsive portfolio website built with Bootstrap and jQuery.</p>
+                            <div class="d-flex">
+                                <span class="badge bg-secondary me-2">HTML5</span>
+                                <span class="badge bg-secondary me-2">CSS3</span>
+                                <span class="badge bg-secondary">JavaScript</span>
+                            </div>
+                            <div class="mt-3">
+                                <a href="#" class="btn btn-sm btn-outline-primary me-2">View Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary btn-custom">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light-gray">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h6 class="text-primary">GET IN TOUCH</h6>
+                    <h2>Contact Me</h2>
+                    <p class="lead">Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Your Message" id="message" style="height: 150px"></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-custom">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 text-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card h-100 p-4 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-envelope text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Email</h5>
+                            <p class="mb-0">youremail@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card h-100 p-4 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-phone-alt text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Phone</h5>
+                            <p class="mb-0">+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h5>Location</h5>
+                            <p class="mb-0">New York, NY, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4 class="mb-4">MY PORTFOLIO</h4>
+                    <p>A creative and passionate web developer dedicated to creating beautiful and functional websites and applications.</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+                        <li class="mb-2"><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-4">Social Media</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Your Name. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Designed and built with <i class="fas fa-heart text-danger"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Change navbar background on scroll
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize the Bootstrap scrollspy
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar'
+        })
+    </script>
+</body>
+</html>
